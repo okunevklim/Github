@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="package_name">github</string>
+    <string name="login_button">Sign up for GitHub</string>
+    <string name="search">Поиск</string>
+    <string name="saved">Сохраненное</string>
+    <string name="search_repo">Найти репозиторий</string>
+    <string name="empty_result">По вашему запросу ничего не найдено</string>
+    <string name="default_search">Вы еще ничего не искали</string>
+    <string name="rate_limit_error">Превышен лимит запросов</string>
+    <string name="empty_saved">Сохраненных репозиториев нет</string>
+    <string name="thousand">K</string>
+    <string name="million">KK</string>
+    <string name="disconnected">Соединение отсутствует</string>
+    <string name="no_internet_title">Отсутствует подключение к Интернету</string>
+    <string name="db_failed">Ошибка при загрузке данных</string>
+    <string name="login_auth_guest">Войти как гость</string>
+    <string name="logout">Выйти из аккаунта</string>
+    <string name="clear_db">Очистить всё</string>
+    <string name="db_error">Прозошла ошибка при загрузке из базы данных</string>
+    <string name="db_cleared">База данных успешно очищена</string>
+    <string name="guest_auth">Вы вошли как гость</string>
+</resources>

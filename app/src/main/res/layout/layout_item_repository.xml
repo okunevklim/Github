@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_ten">
+
+    <ImageView
+        android:id="@+id/repoAvatar"
+        android:layout_width="@dimen/image_thirty"
+        android:layout_height="@dimen/image_thirty"
+        android:layout_marginTop="@dimen/default_ten"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_repository"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        android:layout_marginTop="@dimen/default_ten"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_eighteen"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repoAvatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Repository Name" />
+
+    <TextView
+        android:id="@+id/repoDescription"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/repoAvatar"
+        app:layout_constraintTop_toBottomOf="@id/repoName"
+        tools:text="Всем привет, это мой первый репозиторий на сервисе Github!" />
+</androidx.constraintlayout.widget.ConstraintLayout>

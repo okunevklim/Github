@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimens fot text-->
+    <dimen name="text_size_eighteen">18sp</dimen>
+    <dimen name="text_size_sixteen">16sp</dimen>
+
+    <!--Default dimens-->
+    <dimen name="default_ten">10dp</dimen>
+    <dimen name="default_zero">0dp</dimen>
+    <dimen name="default_five">5dp</dimen>
+    <dimen name="default_twenty">20dp</dimen>
+
+    <!--Item RepositoryModel-->
+    <dimen name="repo_photo">60dp</dimen>
+
+    <!--Others-->
+    <dimen name="margin_end">80dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="disconnected_image">150dp</dimen>
+    <dimen name="image_thirty">30dp</dimen>
+</resources>

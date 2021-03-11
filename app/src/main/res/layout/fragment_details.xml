@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_ten">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/repo_photo"
+        android:layout_height="@dimen/repo_photo"
+        android:layout_marginTop="@dimen/default_ten"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_photoholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        android:layout_marginTop="@dimen/default_ten"
+        android:layout_marginEnd="@dimen/margin_end"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_sixteen"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Repository Name" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="@dimen/default_twenty"
+        android:layout_height="@dimen/default_twenty"
+        android:layout_marginTop="@dimen/default_ten"
+        android:layout_marginEnd="@dimen/default_five"
+        android:src="@drawable/ic_star"
+        app:layout_constraintEnd_toStartOf="@id/countStar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countStar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_zero"
+        android:layout_marginStart="@dimen/default_five"
+        android:layout_marginTop="@dimen/default_ten"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="900" />
+
+    <TextView
+        android:id="@+id/repoDescription"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        android:layout_marginTop="@dimen/default_ten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/repoName"
+        tools:text="Всем привет, это мой первый репозиторий на сервисе Github!" />
+
+    <ImageView
+        android:id="@+id/fork"
+        android:layout_width="@dimen/default_twenty"
+        android:layout_height="@dimen/default_twenty"
+        android:layout_marginTop="@dimen/default_ten"
+        android:src="@drawable/ic_fork"
+        app:layout_constraintEnd_toEndOf="@id/avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+    <TextView
+        android:id="@+id/forkCount"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_five"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@id/avatar"
+        app:layout_constraintStart_toStartOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/fork"
+        tools:text="1203" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="@dimen/default_zero"
+        android:layout_height="@dimen/twenty_five"
+        android:layout_marginTop="@dimen/default_ten"
+        android:src="@drawable/ic_not_saved"
+        app:layout_constraintEnd_toEndOf="@id/avatar"
+        app:layout_constraintStart_toStartOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/forkCount" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        android:layout_marginTop="@dimen/default_ten"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/repoDescription"
+        tools:text="Автор: klim.okunev" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_ten"
+        android:layout_marginTop="@dimen/default_ten"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        tools:text="Дата создания: 26.01.2005" />
+</androidx.constraintlayout.widget.ConstraintLayout>

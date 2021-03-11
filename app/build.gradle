@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.example.github"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "androidx.core:core-ktx:$corektxVersion"
+    implementation "androidx.appcompat:appcompat:$appCompatVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
+
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
+
+    // GSON
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // Picasso
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewmodelKtx"
+
+    // Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationFragmentKtx"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationUiKtx"
+
+    // RxJava2
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid"
+
+    // Retrofit + gson
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2Gson"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2RxJava"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //LoggingInterceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:$loggingInterceptor"
+
+    //RxSearch
+    implementation "com.jakewharton.rxbinding3:rxbinding:$rxSearch"
+
+    // Circle ImageView
+    implementation "com.pkmmte.view:circularimageview:$roundViewVersion"
+
+    // Room
+    implementation "androidx.room:room-runtime:$roomRuntime"
+    kapt "androidx.room:room-compiler:$roomCompiler"
+    implementation "android.arch.persistence.room:rxjava2:$roomRxJava2"
+}
